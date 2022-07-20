@@ -2,10 +2,22 @@
 {% block body %}
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
 
                         <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="{{movie.img.url}}" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">{{movie.name}}</h5>
+
+                        </div>
+
+
+                        </div>
+
+
+
+</div>
+                        <div class="card" style="width: 18rem;">
                         <div class="card-body">
                         <h5 class="card-title">{{movie.name}}</h5>
                          <p class="card-text">{{movie.decs}}</p>
@@ -15,7 +27,6 @@
                             <a href="{% url 'movieapp:delete' movie.id %}" class="btn btn-danger">Delete</a>
 
                         </div>
-</div>
 
 
 
@@ -23,6 +34,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 {% endblock %}
